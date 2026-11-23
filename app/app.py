@@ -89,6 +89,6 @@ def create_task():
 
 if __name__ == "__main__":
     init_db()
-    host = os.environ.get("APP_HOST", "0.0.0.0")
+    host = os.environ.get("APP_HOST", "127.0.0.1")
     port = int(os.environ.get("APP_PORT", "8080"))
     app.run(host=host, port=port)
